@@ -133,7 +133,11 @@
   .btn--hold {
     top: 48.2rem;
   }
-
+  .rules {
+    background: yellow !important;
+    top: 0.8rem;
+    padding: 0px 10px !important;
+  }
   .btn:active {
     transform: translate(-50%, 3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -163,6 +167,64 @@
   .hidden {
     display: none;
   }
+}
+/* ##################################
+################ MODAL ##########
+############################### */
+
+.show-modal {
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-p {
+  font-size: 1.3rem !important;
+}
+
+/* -------------------------- */
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
 
 @media (min-width: 576px) and (max-width: 787px) {
@@ -243,7 +305,7 @@
     opacity: 0.8;
     border-radius: 9px;
     color: #fff;
-    width: 31%;
+    width: 40%;
     padding: 1.5rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -259,7 +321,7 @@
 
   .current-score {
     font-size: 3.5rem;
-    padding: 0;
+    padding: 1rem;
   }
 
   /* ABSOLUTE POSITIONED ELEMENTS */
@@ -301,6 +363,11 @@
   .btn--hold {
     top: 48.2rem;
   }
+  .rules {
+    background: yellow !important;
+    top: 0.8rem;
+    padding: 0px 10px !important;
+  }
 
   .btn:active {
     transform: translate(-50%, 3px);
@@ -331,4 +398,62 @@
   .hidden {
     display: none;
   }
+}
+
+/* ##################################
+################ MODAL ##########
+############################### */
+.show-modal {
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-p {
+  font-size: 1.3rem !important;
+}
+
+/* -------------------------- */
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
