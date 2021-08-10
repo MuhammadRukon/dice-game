@@ -97,3 +97,10 @@ btnNew.addEventListener('click', init);
 //1: get initial value of current score, total score,
 //2:  set 1(0)as active player
 //3: remove winner class
+
+// '''''''''''''''''
+// '''''''''''''
+// //////////
+///////
+
+////////////////
